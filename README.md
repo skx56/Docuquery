@@ -1,5 +1,5 @@
 
-# Smart Querying for PDFs
+# Docuquery
 
 ## Introduction
 
@@ -75,7 +75,7 @@ The chat history is displayed with a clear distinction between user messages and
 
 1. Clone the respository 
 ```
-git clone https://github.com/Ayush-Singh677/Smart-Querying-for-PDFs.git
+git clone https://github.com/sakshamojha56/Docuquery.git
 ```
 2. Enter into the repo directory
 ```
