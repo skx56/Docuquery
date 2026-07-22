@@ -26,6 +26,20 @@ Docuquery turns documents into an interactive knowledge base. It extracts text f
 
 The application combines extraction utilities, embedding/indexing dependencies, and a Streamlit app. FAISS provides vector search while document loaders and OCR-related packages broaden input coverage.
 
+## Architecture Diagram
+
+```mermaid
+flowchart LR
+  Documents["PDFs, Images, and Documents"] --> Extractor["Text and OCR Extraction"]
+  Extractor --> Chunks["Chunking and Preprocessing"]
+  Chunks --> Embeddings["Embedding Generation"]
+  Embeddings --> FAISS["FAISS Vector Index"]
+  Question["User Question"] --> Retrieval["Semantic Retrieval"]
+  FAISS --> Retrieval
+  Retrieval --> Answer["Grounded Answer"]
+  Answer --> Streamlit["Streamlit Interface"]
+```
+
 ## Technology Stack
 
 - Streamlit for the interactive application.
